@@ -1,188 +1,125 @@
+/* Importing the Poppins font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Applying Poppins font to all elements */
 }
 
-body{
-    background-color: rgb(232, 232, 238);
+/* Style for the body element */
+body {
+    background-color: rgb(232, 232, 238); /* Light grey background color */
 }
 
-.container{
+/* Main container styling */
+.container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    margin-top: 20px; /* Add margin at the top */
 }
 
-.input-container{
+/* Styling for the input container */
+.input-container {
     width: 100%;
-    max-width: 500px;
-    text-align: center;
-    padding: 20px;
+    max-width: 500px; /* Maximum width for the input container */
+    text-align: center; /* Center align text inside input container */
+    padding: 20px; /* Padding around the content */
 }
 
-.input-container input{
-    border: none;
-    outline: none;
-    padding: 12px;
-    margin-block: 12px;
-    border-radius: 4px;
-    font-size: 16px;
+/* Styling for input elements inside the input container */
+.input-container input {
+    border: none; /* Remove border */
+    outline: none; /* Remove outline on focus */
+    padding: 12px; /* Padding inside input fields */
+    margin-block: 12px; /* Margin at the top and bottom of input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    font-size: 16px; /* Font size for text inside input fields */
 }
 
-.input-container input[type="text"]{
-    width: 70%;
+/* Styling specifically for text input field */
+.input-container input[type="text"] {
+    width: 70%; /* Width of the text input field */
 }
 
-.input-container input[type="button"]{
-    background-color: #563da3;
-    color: #ffffff;
-    font-weight: 700;
-    margin-left: 8px;
-    cursor: pointer;
-    padding: 12px 24px;
+/* Styling specifically for button input field */
+.input-container input[type="button"] {
+    background-color: #563da3; /* Dark purple background color */
+    color: #ffffff; /* White text color */
+    font-weight: 700; /* Bold text */
+    margin-left: 8px; /* Margin on the left side of the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 12px 24px; /* Padding inside the button */
 }
 
-.input-container input[type="button"]:hover{
-    background-color: #6f60b1;
+/* Hover effect for button input field */
+.input-container input[type="button"]:hover {
+    background-color: #6f60b1; /* Lighter purple background on hover */
 }
 
-ul{
-    width: 70%;
-    max-width: 450px;
+/* Styling for unordered list */
+ul {
+    width: 70%; /* Width of the unordered list */
+    max-width: 450px; /* Maximum width for the unordered list */
+    /* Flexbox styles are commented out */
     /* display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center; */
 }
 
-ul li{
-    list-style-type: none;
-    cursor: pointer;
-    margin-block-end: 12px;
-    border-radius: 8px;
-    border: 0.125px solid #9f9fa1;
-    padding: 6px 12px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background-color 0.5s;
-}
-
-ul li:hover{
-    background-color: #cacacb;
-}
-
-ul li p{
-    flex-grow: 1;
-    padding: 2px;
-}
-.btn{
-    border: none;
-    outline: none;
-    font-size: 16px;
-    background: none;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 8px;
-}
-
-.deleteBtn{
-    color: #6600ff;
-}
-
-.editBtn{
-    color: #000480;
-}
+/* Styling for list items */
 ul li {
-    list-style-type: none;
-    cursor: pointer;
-    margin-block-end: 12px;
-    border-radius: 8px;
-    border: 0.125px solid #9f9fa1;
-    padding: 6px 12px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background-color 0.5s;
+    list-style-type: none; /* Remove default list styling */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-block-end: 12px; /* Margin at the bottom of list items */
+    border-radius: 8px; /* Rounded corners for list items */
+    border: 0.125px solid #9f9fa1; /* Light grey border for list items */
+    padding: 6px 12px; /* Padding inside list items */
+    background-color: #ffffff; /* White background color */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically center */
+    justify-content: space-between; /* Space between items inside the list item */
+    transition: background-color 0.5s; /* Smooth transition for background color */
 }
 
+/* Hover effect for list items */
 ul li:hover {
-    background-color: #cacacb;
+    background-color: #cacacb; /* Light grey background color on hover */
 }
 
+/* Styling for paragraph inside list items */
 ul li p {
-    flex-grow: 1;
-    padding: 2px;
+    flex-grow: 1; /* Allow paragraph to grow and fill space */
+    padding: 2px; /* Padding inside the paragraph */
 }
 
+/* General button styling */
 .btn {
-    border: none;
-    outline: none;
-    font-size: 16px;
-    background: none;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 8px;
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    font-size: 16px; /* Font size for buttons */
+    background: none; /* No background for buttons */
+    font-weight: 600; /* Semi-bold text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 8px; /* Padding inside buttons */
 }
 
+/* Styling for delete buttons */
 .deleteBtn {
-    color: #2f00ff;
+    color: #ff0037; /* Red color for delete buttons */
 }
 
+/* Styling for edit buttons */
 .editBtn {
-    color: #0f0080;
+    color: #00801a; /* Green color for edit buttons */
 }
 
-ul li {
-    list-style-type: none;
-    cursor: pointer;
-    margin-block-end: 12px;
-    border-radius: 8px;
-    border: 0.125px solid #9f9fa1;
-    padding: 6px 12px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background-color 0.5s;
-}
-
-ul li:hover {
-    background-color: #cacacb;
-}
-
-ul li p {
-    flex-grow: 1;
-    padding: 2px;
-}
-
-.btn {
-    border: none;
-    outline: none;
-    font-size: 16px;
-    background: none;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 8px;
-}
-
-.deleteBtn {
-    color: #ff0037;
-}
-
-.editBtn {
-    color: #00801a;
-}
-
+/* Styling for checkbox elements */
 .checkbox {
-    margin-right: 12px;
+    margin-right: 12px; /* Margin on the right side of the checkbox */
 }
-
